@@ -9,4 +9,11 @@ books.info = () => {
     console.log(books.author, books.title);
 }
 
-console.log(info())
+books.info()
+
+books.yearChange = (publish) => {
+    books.publish = 1980
+    console.log(books.publish);
+}
+
+books.yearChange()

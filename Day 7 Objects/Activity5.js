@@ -5,7 +5,6 @@ const books = {
      edition: 2004 
 };
 
-  console.log(books);
-  console.log(books.edition);
-  console.log(books.title);
-  console.log(books.genre);
+for (let key in books) {
+    console.log(`${key} : ${books[key]}`);
+  }
