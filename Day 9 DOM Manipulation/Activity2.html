@@ -6,12 +6,27 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
 </body>
 <script>
+
     let newElem = document.createElement("div")
-    newElem.textContent = "Hellloooo"
-    console.log(newElem);
-    document.body.appendChild("newElem");
+    let textNode = document.createTextNode("Hellloooo")
+    // console.log(newElem);
+    document.body.appendChild(newElem.appendChild(textNode));
+
+    let li = document.createElement("li")
+    li.innerHTML = "Help"
+    document.body.querySelector("ul").appendChild(li);
+
+    // let liText = document.createTextNode("Help")
+    // li.appendChild(liText)
+    // document.body.querySelector("ul").appendChild(li);
+    
+
 </script>
 </html>
